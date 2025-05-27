@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Profile-App
-//
-//  Created by Partha on 27/05/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
