@@ -11,6 +11,8 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
                         .shadow(color: .red, radius: 5, x: 4, y:4)
+                    Text("Partha").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
+                        .shadow(radius: 4, x: 4, y: 4)
                }
             }
         }
