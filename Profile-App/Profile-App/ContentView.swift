@@ -2,15 +2,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack{
+            Image("profileBg").resizable().edgesIgnoringSafeArea(.all)
         }
-        .padding()
     }
 }
+
+
 
 #Preview {
     ContentView()
