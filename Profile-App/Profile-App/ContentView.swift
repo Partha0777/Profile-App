@@ -23,32 +23,36 @@ struct ContentView: View {
                     Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
                         .shadow(radius: 4, x: 4, y: 4)
                     
-                    HStack(spacing:40){
-                        
-                        Image(systemName: "heart.circle")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Image(systemName: "network")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Image(systemName: "message.circle")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Image(systemName: "phone.circle")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                
-                    }.foregroundColor(.white)
-                        .shadow(color: .red, radius: 5,x: 5, y: 5)
-                        .frame(width: 250)
+                    contact
                     
                     Spacer()
                }
             }
         }
+    }
+    
+    var contact: some View{
+        HStack(spacing:40){
+            
+            Image(systemName: "heart.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            Image(systemName: "network")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            Image(systemName: "message.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            Image(systemName: "phone.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+    
+        }.foregroundColor(.white)
+            .shadow(color: .red, radius: 5,x: 5, y: 5)
+            .frame(width: 250)
     }
 }
 
