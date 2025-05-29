@@ -22,6 +22,26 @@ struct ContentView: View {
                     
                     Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
                         .shadow(radius: 4, x: 4, y: 4)
+                    
+                    HStack{
+                        
+                        Image(systemName: "heart.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                        Image(systemName: "network")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                        Image(systemName: "message.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                        Image(systemName: "phone.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                
+                    }
                }
             }
         }
