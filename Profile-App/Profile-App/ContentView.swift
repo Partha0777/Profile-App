@@ -23,7 +23,7 @@ struct ContentView: View {
                     Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
                         .shadow(radius: 4, x: 4, y: 4)
                     
-                    HStack{
+                    HStack(spacing:40){
                         
                         Image(systemName: "heart.circle")
                             .resizable()
@@ -41,7 +41,11 @@ struct ContentView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                 
-                    }
+                    }.foregroundColor(.white)
+                        .shadow(color: .red, radius: 5,x: 5, y: 5)
+                        .frame(width: 250)
+                    
+                    Spacer()
                }
             }
         }
