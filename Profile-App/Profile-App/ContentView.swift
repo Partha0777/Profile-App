@@ -5,31 +5,37 @@ struct ContentView: View {
         ZStack{
             Image("profileBg").resizable().edgesIgnoringSafeArea(.all)
             VStack{
-                VStack(alignment: .center, spacing: 12) {
-                    Image("profileImage").resizable()
-                        .frame(width: 180, height: 180)
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(Circle())
-                        .shadow(color: .red, radius: 5, x: 4, y:4)
-                    Text("Partha").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
-                        .shadow(radius: 4, x: 4, y: 4)
-                
-                    Text("Mobile App Engineer").font(.system(size: 18, weight: Font.Weight.regular)).foregroundColor(Color.white)
-                        .shadow(radius: 4, x: 4, y: 4)
-                    
-                    Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
-                        .shadow(radius: 4, x: 4, y: 4)
-                    
-                    Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
-                        .shadow(radius: 4, x: 4, y: 4)
-                    
-                    contact
-                    
-                    Spacer()
-               }
+                profile
             }
         }
     }
+    
+    var profile: some View{
+        VStack(alignment: .center, spacing: 12) {
+            Image("profileImage").resizable()
+                .frame(width: 180, height: 180)
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
+                .shadow(color: .red, radius: 5, x: 4, y:4)
+            Text("Partha").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
+                .shadow(radius: 4, x: 4, y: 4)
+        
+            Text("Mobile App Engineer").font(.system(size: 18, weight: Font.Weight.regular)).foregroundColor(Color.white)
+                .shadow(radius: 4, x: 4, y: 4)
+            
+            Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
+                .shadow(radius: 4, x: 4, y: 4)
+            
+            Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
+                .shadow(radius: 4, x: 4, y: 4)
+            
+            contact
+            
+            Spacer()
+       }
+        
+    }
+
     
     var contact: some View{
         HStack(spacing:40){
