@@ -38,7 +38,7 @@ struct ContentView: View {
             
            
             
-            VStack(alignment: .center){
+            VStack(alignment: .center, spacing: 60){
                 RoundedRectangle(cornerRadius: 20)
                     .frame(width: 300, height: 50)
                     .foregroundColor(.white)
@@ -47,8 +47,22 @@ struct ContentView: View {
                         Text("Follow").font(.system(size: 22, weight: .bold))
                     )
                 
-                HStack{
+                HStack(spacing:60){
                     
+                    VStack(spacing: 8){
+                        Text("2800").font(.system(size: 24, weight: .bold))
+                        Text("Followers")
+                    }
+                    
+                    VStack(spacing: 8){
+                        Text("535").font(.system(size: 24, weight: .bold))
+                        Text("Follows")
+                    }
+                    
+                    VStack(spacing: 8){
+                        Text("723").font(.system(size: 24, weight: .bold))
+                        Text("Posts")
+                    }
                 }
                 
             }
