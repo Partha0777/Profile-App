@@ -33,9 +33,25 @@ struct ContentView: View {
             Text("").font(.system(size: 28, weight: Font.Weight.bold)).foregroundColor(Color.white)
                 .shadow(radius: 4, x: 4, y: 4)
             
+           
             contact
             
-            Spacer()
+           
+            
+            VStack(alignment: .center){
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 300, height: 50)
+                    .foregroundColor(.white)
+                    .shadow(color:.pink,radius: 5, x: 5, y:5)
+                    .overlay(
+                        Text("Follow").font(.system(size: 22, weight: .bold))
+                    )
+                
+                HStack{
+                    
+                }
+                
+            }
        }
         
     }
