@@ -8,9 +8,7 @@ struct ContentView: View {
             Image("profileBg").resizable().edgesIgnoringSafeArea(.all)
             VStack{
                 profile
-                
                 Spacer()
-                
                 engagementAndAbout
             }
         }
@@ -36,8 +34,8 @@ struct ContentView: View {
             Spacer()
            
             contact
-            Spacer()
             
+            Spacer()
             
        }
         
