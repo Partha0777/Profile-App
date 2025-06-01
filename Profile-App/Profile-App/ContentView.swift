@@ -3,7 +3,6 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        
         ZStack{
             Image("profileBg").resizable().edgesIgnoringSafeArea(.all)
             VStack{
@@ -12,7 +11,6 @@ struct ContentView: View {
                 engagementAndAbout
             }
         }
-        
     }
     
     var profile: some View{
