@@ -19,15 +19,10 @@ struct ContentView: View {
         
         VStack(alignment: .center, spacing: 12) {
             Spacer()
-           
             profileDetail
-        
             Spacer()
-           
             contact
-            
             Spacer()
-            
        }
         
     }
