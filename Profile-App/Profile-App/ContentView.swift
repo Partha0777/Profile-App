@@ -19,6 +19,21 @@ struct ContentView: View {
         
         VStack(alignment: .center, spacing: 12) {
             Spacer()
+           
+            profileDetail
+        
+            Spacer()
+           
+            contact
+            
+            Spacer()
+            
+       }
+        
+    }
+    
+    var profileDetail: some View{
+        VStack{
             Image("profileImage").resizable()
                 .frame(width: 180, height: 180)
                 .aspectRatio(contentMode: .fit)
@@ -29,16 +44,7 @@ struct ContentView: View {
         
             Text("Mobile App Engineer").font(.system(size: 18, weight: Font.Weight.regular)).foregroundColor(Color.white)
                 .shadow(radius: 4, x: 4, y: 4)
-            
-        
-            Spacer()
-           
-            contact
-            
-            Spacer()
-            
-       }
-        
+        }
     }
 
     
