@@ -40,6 +40,7 @@ struct ContentView: View {
 
     
     var contact: some View{
+        
         HStack(spacing:60){
             
             Image(systemName: "heart.circle")
@@ -61,6 +62,7 @@ struct ContentView: View {
         }.foregroundColor(.white)
             .shadow(color: .red, radius: 5,x: 5, y: 5)
             .padding(.horizontal, 30)
+        
     }
     
     
