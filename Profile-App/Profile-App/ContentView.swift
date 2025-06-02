@@ -65,6 +65,7 @@ struct ContentView: View {
     
     
     var engagementAndAbout : some View{
+        
         VStack(alignment: .center, spacing: 20){
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: 300, height: 50)
