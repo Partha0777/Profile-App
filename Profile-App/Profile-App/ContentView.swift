@@ -24,6 +24,7 @@ struct ContentView: View {
     }
     
     var profileDetail: some View{
+        
         VStack{
             Image("profileImage").resizable()
                 .frame(width: 180, height: 180)
@@ -36,6 +37,7 @@ struct ContentView: View {
             Text("Mobile App Engineer").font(.system(size: 18, weight: Font.Weight.regular)).foregroundColor(Color.white)
                 .shadow(radius: 4, x: 4, y: 4)
         }
+        
     }
 
     
