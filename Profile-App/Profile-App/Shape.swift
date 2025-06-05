@@ -18,6 +18,7 @@ struct HexoShape: Shape{
     
     func path(in rect: CGRect) -> Path{
         return Path{path in
+            
             let p1 = CGPoint(x: 0, y: 40)
             let p2 = CGPoint(x: 0, y: rect.height - 40)
             let p3 = CGPoint(x: rect.width / 2, y: rect.height)
