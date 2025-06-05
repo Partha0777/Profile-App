@@ -13,6 +13,8 @@ struct ContentView: View {
         }
     }
     
+    
+    
     var profile: some View{
         VStack(alignment: .center, spacing: 12) {
             Spacer()
@@ -109,7 +111,7 @@ struct ContentView: View {
 }
 
 
-
 #Preview {
-    ContentView()
+    Shape()
 }
+
