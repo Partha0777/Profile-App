@@ -28,6 +28,7 @@ struct HexoShape: Shape{
             
             
             path.move(to: p6)
+            
             path.addArc(tangent1End: p1, tangent2End: p2, radius: 5)
             path.addArc(tangent1End: p2, tangent2End: p3, radius: 5)
             path.addArc(tangent1End: p3, tangent2End: p4, radius: 5)
