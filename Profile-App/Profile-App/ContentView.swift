@@ -112,6 +112,6 @@ struct ContentView: View {
 
 
 #Preview {
-    Shape()
+    ShapeView()
 }
 
