@@ -6,10 +6,26 @@
 //
 
 import SwiftUICore
+import SwiftUI
 
 struct ShapeView: View{
+    
+    @State var data : String = ""
+    var listOfNames = ["Partha", "Kan", "Rock"]
+    
+    
     var body: some View {
-        HexoShape().fill().frame(width: 200, height: 200).foregroundColor(.brown)
+        VStack{
+            HexoShape().fill().frame(width: 200, height: 200).foregroundColor(.brown).overlay(content: {
+                Text(data)
+            })
+            Button(action:{
+                var radomName = listOfNames.randomElement() ?? "Nothing"
+                data = radomName
+            }){
+                Text("Click Me")
+            }
+        }
     }
 
 }
