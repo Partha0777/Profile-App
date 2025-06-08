@@ -15,15 +15,21 @@ struct ShapeView: View{
     
     
     var body: some View {
-        VStack{
+        VStack(alignment: .center,spacing: 50){
             HexoShape().fill().frame(width: 200, height: 200).foregroundColor(.brown).overlay(content: {
                 Text(data)
+                    .font(.title2)
+                    .fontWeight(.bold)
             })
+            
             Button(action:{
-                var radomName = listOfNames.randomElement() ?? "Nothing"
+                let radomName = listOfNames.randomElement() ?? "Nothing"
                 data = radomName
             }){
                 Text("Click Me")
+                    .frame(width: 200, height: 50)
+                    .background(RoundedRectangle(cornerRadius:20)
+                    .fill(Color.blue)).foregroundColor(Color.white)
             }
         }
     }
