@@ -37,7 +37,6 @@ struct ContentView: View {
             Text("Mobile App Engineer").font(.system(size: 18, weight: Font.Weight.regular)).foregroundColor(Color.white)
                 .shadow(radius: 4, x: 4, y: 4)
         }
-        
     }
 
     
@@ -64,6 +63,7 @@ struct ContentView: View {
         }.foregroundColor(.white)
             .shadow(color: .red, radius: 5,x: 5, y: 5)
             .padding(.horizontal, 30)
+        
         
     }
     
