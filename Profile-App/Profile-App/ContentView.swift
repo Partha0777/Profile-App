@@ -14,6 +14,7 @@ struct ContentView: View {
     }
     
     var profile: some View{
+        
         VStack(alignment: .center, spacing: 12) {
             Spacer()
             profileDetail
@@ -21,6 +22,7 @@ struct ContentView: View {
             contact
             Spacer()
        }
+        
     }
     
     var profileDetail: some View{
