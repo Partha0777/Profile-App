@@ -100,7 +100,9 @@ struct ContentView: View {
             }
             
             VStack(spacing: 12){
+                
                 Text("About").font(.system(size: 20, weight: .bold))
+                
                 Text("iOS Developer skilled in Swift, SwiftUI, and UIKit.Experienced in building clean, scalable apps with MVVM.Focus on performance, API integration, and smooth UX.").lineSpacing(4).opacity(0.5)
             }.padding(12)
             
